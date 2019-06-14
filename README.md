@@ -8,6 +8,7 @@ A JavaScript tool for sending random death messages to chat, along with a count 
 * Saves the current number of deaths and the channel name to local browser storage in JSON format.
 * Does NOT save connection information
 
+
 ## Sample messages
 
 * It is a shame that [username] died [count] [times] in a row.
@@ -30,7 +31,13 @@ A JavaScript tool for sending random death messages to chat, along with a count 
 3. Register for a Twitch oAuth Token at [https://twitchapps.com/tmi/](https://twitchapps.com/tmi/)
 4. Save the oAuth Token to safe place!
 5. Enter the Token, your Twitch Username, and the name of the Channel you want to connect to in the applicable boxes.
-6. Have fun!
+6. Click [Connect] to connect to that channel's chat.
+7. Have fun!
+
+
+## Reporting issues / making suggestions
+
+Please submit a [new issue](https://github.com/pkarjala/twitch-death-messages/issues/new)!
 
 
 ## Technical notes
@@ -41,9 +48,11 @@ Messages are randomly generated using the following format in the `messages` arr
 * `[count]` - The current death count
 * `[times]` - A dynamically generated value of the word "time/times" depending on singular / plural output
 
+
 ## External Libraries
 
-Uses the [TwitchJS](https://twitch-devs.github.io/twitch-js) library for connection to and communication with a chat channel.
+Uses the [TwitchJS](https://twitch-devs.github.io/twitch-js) library for connection to and communication with a Twitch chat channel.
+
 
 ## License
 
