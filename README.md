@@ -7,6 +7,7 @@ A JavaScript tool for sending random death messages to chat, along with a count 
 * Just requires a single web page and works from your web browser.
 * Saves the current number of deaths and the channel name to local browser storage in JSON format.
 * Does NOT save connection information
+* Lightweight, just uses pure JavaScript for the core components
 
 
 ## Sample messages
