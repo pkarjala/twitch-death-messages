@@ -72,7 +72,7 @@ function connectToTwitch() {
 
 // Send a chat message when a button is clicked.
 function sendDeathMessage() {
-  count++;
+  incrementCount();
   setSpanCountValue(count, localStoreNameValue);
   saveCount(count, localStoreNameValue);
   stringToSend = randomMessage(messages)
@@ -107,6 +107,11 @@ function randomMessage(messages) {
 function saveCount(countValue, localStoreName) {
   json_data = { "count" : countValue };
   localStorage.setItem( localStoreName, JSON.stringify(json_data));
+}
+
+// Increments the current Death Count
+function incrementCount() {
+  count++;
 }
 
 // Resets the count value stored and displayed.
